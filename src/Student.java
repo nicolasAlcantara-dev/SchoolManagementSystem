@@ -9,13 +9,12 @@ public class Student extends Person{
     }
 
     @Override
-    public String toString() {
-        return "Student{" +
-                "enrollmentNumber='" + enrollmentNumber + '\'' +
-                ", course='" + course + '\'' +
-                ", age=" + age +
-                ", name='" + name + '\'' +
-                ", address='" + address + '\'' +
-                '}';
+    public void displayInformation() {
+        super.displayInformation();
+        System.out.printf(
+                "Enrollment Number: %s%nCourse: %s%n",
+                enrollmentNumber, course
+        );
+
     }
 }

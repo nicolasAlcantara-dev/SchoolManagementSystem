@@ -9,12 +9,10 @@ public class Person {
         this.address = address;
     }
 
-    @Override
-    public String toString() {
-        return "Person{" +
-                "age=" + age +
-                ", name='" + name + '\'' +
-                ", address='" + address + '\'' +
-                '}';
+    public void displayInformation() {
+        System.out.printf(
+                "Name: %s%nAge: %d%nAddress: %s%nJob",
+                name, age, address
+        );
     }
 }
